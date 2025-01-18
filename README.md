@@ -24,7 +24,7 @@ A modern, animated website built with React, Vite, GSAP, and Tailwind CSS.
 
 1. Clone the repository:
 ```sh
-git clone [repository-url]
+git clone https://github.com/vanshaj-online/sundae-creative-clone.git
 ```
 
 2. Install dependencies:
