@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "canelaCondensed";
+  src: url(./assets/fonts/CanelaCondensed-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "heroFont";
+  src: url(./assets/fonts/SoehneSchmalDreiviertelfett.ttf) format("truetype");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size-huge: clamp(115px, 0.15 * calc(100 * var(--vw, 0.8vw)), 210px);
+}
+
+.menu-font {
+  font-family: "Switzer", sans-serif;
+}
+
+.canela {
+  font-family: "canelaCondensed", sans-serif;
+  font-size: var(--font-size-huge);
+  color: white;
+}
+
+.hero-font {
+  font-family: "heroFont", sans-serif;
+  font-size: var(--font-size-huge);
+  font-weight: 800;
+}
+
+.hero-font-small {
+  font-family: "heroFont", sans-serif;
+}
+
+body {
+  background: #1d2120;
+  font-family: "canelaCondensed", serif;
+  color: #cdcacb;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transform-origin: top;
+  background: #f34848;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),;
+}
+
+.btn:hover::before {
+  height: 100%;
+}
